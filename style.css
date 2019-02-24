@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     }
 
@@ -172,7 +172,7 @@ section {
 
 p {
     color: dimgray;
-    
+    text-align: center;
 }
 
 aside {
@@ -197,6 +197,16 @@ footer {
 
 /* Tablet */
 @media (min-width:700px) {
+    body {
+        margin: 0;
+        font-size: 18px;
+    }
+    
+    section {
+   position: inherit;
+   border-bottom: 5px #ffffff;
+}
+    
     .menu-toggle {
         display: none;
     }
@@ -241,6 +251,12 @@ footer {
 
 /* Desktop */
 @media (min-width:1000px) {
+    body {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0;
+    }
+    
     .menu-toggle {
         display: none;
     }

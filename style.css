@@ -48,17 +48,14 @@ a {
 
 /* Header */
 
-.container {
-    width: 95%;
-    max-width: 100px;
-    margin: 0 auto;
-}
-
 header {
     background: red;
     color: #000000;
     padding: 1em 0;
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 header::after{
@@ -67,19 +64,8 @@ header::after{
     display: block;
 }
 
-.logo{
-    float: left;
-    font-size: 2rem;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 700;
-}
 
-.logo span{
-    font-weight: 300;
-}
-
-.site-nav {
+nav {
     top: 100%;
     right: 0;
     position: absolute;
@@ -88,24 +74,24 @@ header::after{
     overflow: hidden;
 }
 
-.site-nav-open {
+nav-open {
     height: auto;
 }
-.site-nav ul {
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.site-nav li {
+nav li {
     border-bottom: 1px solid #ffffff;
 }
 
-.site-nav li:last-child {
+nav li:last-child {
     border-bottom: none;
 }
 
-.site-nav a {
+nav a {
     color: #ffffff;
     display: block;
     padding: .5em 6em;
@@ -115,8 +101,8 @@ header::after{
     
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
+nav a:hover,
+nav a:focus {
     background: #DAF7A6;
     color: #FF5733;
 }
@@ -162,6 +148,11 @@ header::after{
 
 
 /* article */
+
+article {
+    
+    
+}
 
 /* section-A */
 
@@ -211,12 +202,12 @@ footer {
         display: none;
     }
     
-    .container {
+    header{
      float: left;
      padding: 1em;
 }
     
-    .site-nav {
+    nav {
         height: auto;
         position: relative;
         background: transparent;
@@ -224,19 +215,19 @@ footer {
         margin-right: 10px;
     }
     
-    .site-nav li {
+    nav li {
         display: inline-block;
         border: none;
         
     }
     
-    .site-nav a {
+    nav a {
         padding: 1.5em;
         color: #000000;
     }
     
-    .site-nav a:hover,
-    .site-nav a:focus {
+   nav a:hover,
+   nav a:focus {
         background: transparent;
     }
     
@@ -250,7 +241,7 @@ footer {
 }
 
 /* Desktop */
-@media (min-width:1000px) {
+@media (min-width:700px) {
     body {
     font-size: 20px;
     font-weight: 200;
@@ -261,12 +252,12 @@ footer {
         display: none;
     }
     
-    .container {
+   header {
      float: left;
      padding: 1em;
 }
     
-    .site-nav {
+  nav {
         height: auto;
         position: relative;
         background: transparent;
@@ -274,19 +265,19 @@ footer {
         margin-right: 10px;
     }
     
-    .site-nav li {
+    nav li {
         display: inline-block;
         border: none;
         
     }
     
-    .site-nav a {
+    nav a {
         padding: 1.5em;
         color: #000000;
     }
     
-    .site-nav a:hover,
-    .site-nav a:focus {
+    nav a:hover,
+    nav a:focus {
         background: transparent;
     }
     
